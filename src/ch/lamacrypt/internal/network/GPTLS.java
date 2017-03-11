@@ -25,7 +25,6 @@ public class GPTLS {
      * @param socket SSLSocket to act upon
      */
     public static void setTLSParams(SSLSocket socket) {
-        // sets the supported TLS protocol and cipher suites
         socket.setEnabledProtocols(new String[]{"TLSv1.2"});
         socket.setEnabledCipherSuites(new String[]{
             "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
